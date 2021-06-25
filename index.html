@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hoja de Vida</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+	<form action="registrardatos.php" method="post">
+		<fieldset>
+			<legend>Datos personales</legend>
+			Tipo de Identificación:
+			<select name="pais">
+				<option value="1"></option>
+				<option value="2">Cédula de Ciudadanía</option>
+				<option value="3">Tarjeta Identidad</option>
+				<option value="4">Cédula Extranjería</option>
+				<option value="5">Pasaporte</option>
+				<option value="7">Documento Nacional de Identificación</option>
+			 </select>
+			Documento de identidad:
+			<input type="text" name="dni" size="8"><br><br>
+			Nombre :
+			<input type="text" name="nombre" size="33">
+			Apellido:
+			<input type="text" name="Apellido" size="32"><br><br>
+		</fieldset><br>
+		<fieldset>
+			<legend>Datos Laborales</legend>
+			Nombre de la empresa:
+			<input type="text" name="nombreempresa" size="38"><br><br>
+			Actividad:
+			<input type="text" name="actividad" size="50"><br><br>
+			Dirección:
+			<input type="text" name="direccionempresa" size="50"><br><br>
+		</fieldset><br>
+		<fieldset>
+			<legend>Datos Contacto</legend>
+			Telefono:
+			<input type="text" value="604" name="telefono" size="34"><br><br>
+			Dirección:
+			<input type="text" name="direccionpersona" size="33"><br><br>
+			<textarea name="comentarios" rows="5" cols="45">Ingrese aqui sus comentarios</textarea><br>
+		</fieldset><br>
+		<fieldset>
+			<legend>Género</legend>
+			<img src="iconos/hombre.png" width="40" height="40" />
+			<input type="radio" name="genero" checked value="H">Hombre
+			<img src="iconos/mujer.png" width="40" height="40" />
+			<input type="radio" name="genero" value="M">Mujer<br>
+		</fieldset><br>
+		<fieldset>
+			<legend>Datos Edad</legend>
+			¿Es mayor de edad?:
+			<input type="radio" name="radio1" checked value="si">Si
+			<input type="radio" name="radio1" value="no">No<br><br>
+			
+			<div>
+				<label for="Cumple">Fecha Nacimiento:</label>
+				<input type="date" id="Cumple" name="Cumple">
+			  </div><br>
+			<label for="start">Fecha de Nacimiento:</label>
+			<input type="date" id="start" name="trip-start"
+				   value="2021-06-16"
+				   min="1900-01-01" max="2030-12-31">
+			<div style="color: blue;">
+				<h2> Ejemplo de div y span </h2>
+				<p>
+					Crear input type="checkbox",
+					<span style="color: red;"> y crear botón que claree todos los campos.</span>
+				</p>
+			</div>				   
+		</fieldset><br>
+		<fieldset>
+			<legend>Idiomas</legend>
+			Selecciona los idiomas que dominas<br><br>
+			<input type="checkbox" name="arabe">Árabe<br>
+			<input type="checkbox" name="bengali">Bengalí<br>
+			<input type="checkbox" name="chino">Chino<br>
+			<input type="checkbox" name="espanol">Español<br>
+			<input type="checkbox" name="hindu">Hindú<br>
+			<input type="checkbox" name="ingles">Inglés<br>
+			<input type="checkbox" name="japones">Japonés<br>
+			<input type="checkbox" name="portugues">Portugués<br>
+			<input type="checkbox" name="ruso">Ruso<br>
+		</fieldset><br>
+		<input type="submit" value="Enviar">
+	</form>
+	</body>
+</html>
